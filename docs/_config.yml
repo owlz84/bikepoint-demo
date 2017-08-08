@@ -1,0 +1,14 @@
+# basic options
+title: Watson Explorer Sandpit
+author: Stuart Lynn (GBS Advanced Analytics)
+email: stuart.lynn@uk.ibm.com
+description: Building a Watson Explorer Analytical Components server on your local machine
+#twitter_username: jekyllrb
+github_username:  Stuart-Lynn
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-slate
+show_downloads: true
+gems:
+  - jemoji
