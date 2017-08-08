@@ -7,9 +7,9 @@ The __[bikepoint prediction demo](https://ibm.biz/BdjRJd)__ was created for an I
 # The problem
 
 Getting around London can be awkward at the best of times, but nothing is more irritating than renting a Boris Bike<sup>[1](#f1)</sup>
-, completing your journey to a client's office and finding no available spaces in the nearby docking stations.
+, weaving through the traffic to get to a client's office and, at the end of all that, finding no available spaces in the nearby docking stations.
 
-Others have attempted to overcome this problem by taking the frequently updated data made available through the [Transport for London Unified API](https://api.tfl.gov.uk/) (which details for every _bikepoint_: location, number of bikes, docks and spaces) and publishing it to e.g. [a smartphone app](https://play.google.com/store/apps/details?id=uk.gov.tfl.cyclehire&hl=en_GB), where users can see ahead of time which docks will have spaces.
+Others have attempted to ameliorate this risk by taking the frequently updated data made available through the [Transport for London Unified API](https://api.tfl.gov.uk/) (which details for every _bikepoint_: location, number of bikes, docks and spaces) and publishing it to e.g. [a smartphone app](https://play.google.com/store/apps/details?id=uk.gov.tfl.cyclehire&hl=en_GB), where users can see which docks currently have spaces.
 
 The intent of this demo was to go a step further and employ historic usage data and current availability to predict the likelihood of a docking station having a space. In doing so, users of the system will be better able to select a suitable dock ahead of time and budget additional travel time if need be.
 
@@ -17,7 +17,7 @@ The intent of this demo was to go a step further and employ historic usage data 
 
 ## Overview
 
-#### High level system architecture
+### The system on a page...
 
 {% include image.html user="Stuart-Lynn" repo="bikepoint-demo" file="flow.png" alt="sections" width="100%" %}
 
