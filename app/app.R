@@ -13,17 +13,17 @@ library(rgdal)
 library(jsonlite)
 library(httr)
 
-SCORING_HREF = "https://ibm-watson-ml.mybluemix.net/32768/v2/scoring/4305"
-auth_header = c("eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6IjUyODA2MWY3LTYwYTYtNDE1Yi04MWE5LTNlNmUzMGJhNGQzYSIsImluc3RhbmNlSWQiOiI1MjgwNjFmNy02MGE2LTQxNWItODFhOS0zZTZlMzBiYTRkM2EiLCJwbGFuSWQiOiIzZjZhY2Y0My1lZGU4LTQxM2EtYWM2OS1mOGFmM2JiMGNiZmUiLCJyZWdpb24iOiJ3M2libTpwcm9kOnVzLXNvdXRoIiwidXNlcklkIjoiYzdkYzg4ZTUtYTI1NS00NzgxLTkxYmQtNGI4NWZiMTZkYTIyIiwiaXNzIjoiaHR0cDovLzEyOS40MS4yMjkuMTg4OjgwODAvdjIvaWRlbnRpdHkiLCJpYXQiOjE0OTc4NjYzMTcsImV4cCI6MTQ5Nzg5NTExN30.OtRXQck6d4cCzztWqVrNRAJ-jh1fhuNGk0BZr03oSHVOO491zfcOvhdCdU1BkxKTKNNhnWolW6ypHfSDunMI-ZYCdGO3OlJXiUKEtxl4Jh14eWBtp65l2jGX_fJLz6klgtlOAi6LRKhKezcjoC9_7YBexw8cwi7ir4vDJeXIDdx1GtzJexQdlEfNjYBXmItxqsREz5nBxNV0OdIRYfUnPl7RdoJB10wpvUNt5uTilwmD8qttuE86C0V_WGAZRslSpgdUzbVAuLmjd2TFqruYPC9VUh79qT32pu9TgeViouTZK9lSm4lMrqmzFJ5sWYVUhgzvfQEXEhHFJokpK3cgsQ")
+SCORING_HREF = ""
+auth_header = c("")
 names(auth_header)[1] = "Authorization"
 
 dsn_driver <- "DASHDB"  
 dsn_database <- "BLUDB"
-dsn_hostname <- "dashdb-entry-yp-dal09-10.services.dal.bluemix.net"
+dsn_hostname <- ""
 dsn_port <- "50000"  
 dsn_protocol <- "TCPIP"  
-dsn_uid <- "dash14210"
-dsn_pwd <- "W@sI$Ea8H8fz"
+dsn_uid <- ""
+dsn_pwd <- ""
 
 conn_path <- paste(dsn_driver,  
                    ";DATABASE=",dsn_database,
