@@ -2,7 +2,7 @@
 
 The __[bikepoint prediction demo](https://ibm.biz/BdjRJd)__ was created for an IBM internal public sector event. It was intended to communicate the capabilities of the __[Watson Data Platform](https://www.ibm.com/analytics/us/en/watson-data-platform/)__: a Hadoop and Spark cluster environment with additional ingestion and curation assets developed by IBM Global Business Services.
 
-{% include image.html user="Stuart-Lynn" repo="bikepoint-demo" file="dash.png" alt="sections" width="60%" %}
+{% include image.html repo="bikepoint-demo" file="dash.png" alt="sections" width="60%" %}
 
 # The problem
 
@@ -17,7 +17,7 @@ The intent of this demo was to go a step further and employ historic usage data 
 
 ## The system on a page...
 
-{% include image.html user="Stuart-Lynn" repo="bikepoint-demo" file="flow.png" alt="sections" width="100%" %}
+{% include image.html repo="bikepoint-demo" file="flow.png" alt="sections" width="100%" %}
 
 ## User interface
 
