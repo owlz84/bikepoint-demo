@@ -11,7 +11,7 @@ Getting around London can be awkward at the best of times, but nothing is more i
 
 Others have attempted to overcome this problem by taking the frequently updated data made available through the [Transport for London Unified API](https://api.tfl.gov.uk/) (which details for every _bikepoint_: location, number of bikes, docks and spaces) and publishing it to e.g. [a smartphone app](https://play.google.com/store/apps/details?id=uk.gov.tfl.cyclehire&hl=en_GB), where users can see ahead of time which docks will have spaces.
 
-The intent of this demo was to go a step further and employ historic usage data and current availability to predict the likelihood of a docking station having a space. In doing so, it can assist users in selecting a suitable dock to head for and budgeting extra travel time if required.
+The intent of this demo was to go a step further and employ historic usage data and current availability to predict the likelihood of a docking station having a space. In doing so, users of the system will be better able to select a suitable dock ahead of time and budget additional travel time if need be.
 
 # Details of the solution
 
