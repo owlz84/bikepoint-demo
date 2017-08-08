@@ -31,7 +31,7 @@ The user interface for the demo was created in __[Shiny](https://shiny.rstudio.c
 
 The dashboard is running in its own application server, __[ShinyServer](https://www.rstudio.com/products/shiny/shiny-server/)__, within a __[Kubernetes](https://kubernetes.io/)__ "pod" hosted within the IBM Bluemix Platform-as-a-Service.
 
-A _Shiny_ event listener waits for the user to press `Search`, starting the following chain of events:
+A _Shiny_ event listener waits for the user to press `Search`, at which point, the following chain of events is set into motion:
 
 1. Geolocation of the postcode (or landmark) entered by the user (using the Google Maps API);
 2. Translation of lat / lon returned by the service into northing and easting;
