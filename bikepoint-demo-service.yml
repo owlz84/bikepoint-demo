@@ -1,0 +1,28 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: bikepoint-demo
+  labels:
+    name: bikepoint-demo
+spec:
+  containers:
+  - name: bikepoint-demo
+    image: phy2sll/bikepoint-demo:latest
+    ports:
+    - containerPort: 3838
+
+---
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: bikepoint-demo-service
+  labels:
+    name: bikepoint-demo
+spec:
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 3838
+  selector:
+    name: bikepoint-demo
