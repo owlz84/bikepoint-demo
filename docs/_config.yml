@@ -1,8 +1,8 @@
 # basic options
-title: Watson Explorer Sandpit
+title: Bikepoint Predictive Modelling Demo
 author: Stuart Lynn (GBS Advanced Analytics)
 email: stuart.lynn@uk.ibm.com
-description: Building a Watson Explorer Analytical Components server on your local machine
+description: Predictive modelling using open government data, Hive, Python, Spark and the Watson Machine Learning service
 #twitter_username: jekyllrb
 github_username:  Stuart-Lynn
 
