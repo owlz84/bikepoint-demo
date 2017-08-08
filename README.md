@@ -8,6 +8,8 @@ Predictive modelling using open government data, Hive, Python, Spark and the Wat
 
 The __[bikepoint prediction demo](https://ibm.biz/BdjRJd)__ was created for an IBM internal public sector event. It was intended to communicate the capabilities of the __[Watson Data Platform](https://www.ibm.com/analytics/us/en/watson-data-platform/)__: a Hadoop and Spark cluster environment with additional ingestion and curation assets developed by IBM Global Business Services.
 
+<img src="./images/dash.png" width=60%/>
+
 ## The problem
 
 Getting around London can be awkward at the best of times, but nothing is more irritating than renting a Boris Bike<sup>[1](#f1)</sup>
@@ -18,6 +20,12 @@ Others have attempted to overcome this problem by taking the frequently updated 
 The intent of this demo was to go a step further and employ historic usage data and current availability to predict the likelihood of a docking station having a space. In doing so, it can assist users in selecting a suitable dock to head for and budgeting extra travel time if required.
 
 ## Details of the solution
+
+### Overview
+
+#### High level system architecture
+
+<img src="./images/flow.png" width=100%/>
 
 ### User interface
 
@@ -82,6 +90,7 @@ These intervals could comfortably be shortened, especially if more compute capac
     -|-
     bikepoint-ingest.json|Ingest and transform data
     bikepoint-data-exp.json|Explore the data<br/>Build the predictive model
+    deploy-model.ipynb|Model deployment through WML
     bikepoint-hive-ddl.json|Create the Hive tables to support analytics
 
 - `Dockerfile`
