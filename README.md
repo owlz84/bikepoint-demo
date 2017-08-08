@@ -1,8 +1,12 @@
 # Bikepoint Prediction Demo
 
+Predictive modelling using open government data, Hive, Python, Spark and the Watson Machine Learning service.
+
+<https://ibm.biz/BdjRJd>
+
 ## Overview
 
-The __bikepoint prediction demo__ was created for an IBM internal public sector event. It was intended to communicate the capabilities of the Watson Data Platform: a Hadoop and Spark cluster environment with additional ingestion and curation assets developed by IBM Global Business Services.
+The __[bikepoint prediction demo](https://ibm.biz/BdjRJd)__ was created for an IBM internal public sector event. It was intended to communicate the capabilities of the __[Watson Data Platform](https://www.ibm.com/analytics/us/en/watson-data-platform/)__: a Hadoop and Spark cluster environment with additional ingestion and curation assets developed by IBM Global Business Services.
 
 ## The problem
 
@@ -18,6 +22,7 @@ The intent of this demo was to go a step further and employ historic usage data 
 ### User interface
 
 The user interface for the demo was created in __[Shiny](https://shiny.rstudio.com/)__, a library for creating interactive dashboards in __R__. It uses:
+
 - __[leaflet](http://leafletjs.com/)__ for the mapping tasks;
 - __[ggmap](https://github.com/dkahle/ggmap)__ for geolocation of postcodes; and
 - __[ggplot2](http://ggplot2.org/)__ to produce the dynamic line charts.
@@ -34,7 +39,7 @@ A _Shiny_ event listener waits for the user to press `Search`, starting the foll
 
 ### Scoring
 
-Scoring is provided by the __[Watson Machine Learning](https://console.bluemix.net/catalog/services/machine-learning)__ service. 
+Scoring is provided by the __[Watson Machine Learning](https://console.bluemix.net/catalog/services/machine-learning)__ service.
 
 __WML__ permits an analyst to upload __[Spark ML](https://spark.apache.org/docs/latest/ml-guide.html)__ or __[SciKit Learn](http://scikit-learn.org/stable/)__ models (or SPSS Modeler scoring streams) into a repository and then deploy them for online scoring through a RESTful API. The service also has a capability for performing batch scoring runs, though it was not considered for this application.
 
@@ -62,6 +67,30 @@ The output of the __[_Bikepoint_ API](https://api.tfl.gov.uk/swagger/ui/index.ht
 At five minute intervals, an __[IBM Data Connect](https://console.bluemix.net/catalog/services/data-connect)__ job copies the latest data to a __[dashDB](https://console.bluemix.net/catalog/services/dashdb)__ cloud data warehouse, overwriting the data that was stored there previously. Both services are hosted within Bluemix.
 
 These intervals could comfortably be shortened, especially if more compute capacity was made available within the cluster.
+
+## Assets in the repository
+
+- `app/`
+
+    Contains the dashboard code in the file _app.R_.
+
+- `cluster-code/`
+
+    Contains the code (Zeppelin notes) run on the cluster:
+
+    File|Purpose
+    -|-
+    bikepoint-ingest.json|Ingest and transform data
+    bikepoint-data-exp.json|Explore the data<br/>Build the predictive model
+    bikepoint-hive-ddl.json|Create the Hive tables to support analytics
+
+- `Dockerfile`
+
+    Container recipe for building dashboard [Docker](https://www.docker.com/) image.
+
+- `bikepoint-demo-service.yml`
+
+    Pod and service definitions for Kubernetes.
 
 ## Not present in this repository
 
