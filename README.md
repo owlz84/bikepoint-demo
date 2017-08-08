@@ -8,6 +8,4 @@ Predictive modelling using open government data, Hive, Python, Spark and the Wat
 
 The __[bikepoint prediction demo](https://ibm.biz/BdjRJd)__ was created for an IBM internal public sector event. It was intended to communicate the capabilities of the __[Watson Data Platform](https://www.ibm.com/analytics/us/en/watson-data-platform/)__: a Hadoop and Spark cluster environment with additional ingestion and curation assets developed by IBM Global Business Services.
 
-{% include image.html user="Stuart-Lynn" repo="bikepoint-demo" file="dash.png" alt="sections" width="60%" %}
-
 For more detailed documentation, see the [github page](https://pages.github.ibm.com/Stuart-Lynn/bikepoint-demo/).
